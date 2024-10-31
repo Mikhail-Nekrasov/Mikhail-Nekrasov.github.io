@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Just header</h1>
+    <p>My first text</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Players and Scores - Recapping JavaScript</title>
+	<meta charset="utf-8" />
+
+    
+</head>
+<body>
+    <h1>Players and scores</h1>
+    <p>Players and scores: First version with two separate arrays. 
+        (Second could be with Player objects)</p>
+    <hr /> <!-- ----------------------------------------------- -->
+
+    <p>
+        <label>Enter the name of the player:</label>
+        <input type="text" id="txtName" />
+        <br />
+
+        <p id="nameWarning"></p>
+
+        <label>Enter her/his score:</label>
+        <input type="text" id="txtScore" />
+        <br />
+
+        <p id="scoreWarning"></p>
+
+        <input type="button" 
+               value="Add player and clear input fields"
+               onClick="addPlayer()" />
+    </p>
+
+    <hr /> <!-- ----------------------------------------------- -->
+
+    <p>
+        <input type="submit" 
+               value="List players"
+               onClick="listPlayers()" />
+    </p>
+    <p id="pOutput"></p>
+
+    <hr /> <!-- ----------------------------------------------- -->
+    
+    <p>
+        <span>Enter the name of the player to search:</span>
+        <input type="text" id="playerForSearch"/>
+        <input type="submit" 
+               value="Search"
+               onClick="playerSearch()" />
+    </p>
+    <p id="pOutput2"></p>
+
+    <hr /> <!-- ----------------------------------------------- -->
+
+    <p>
+        <input type="submit" 
+               value="Find winner" 
+               onClick="findWinner()"/>
+    </p>
+    <p id="pOutput3"></p>
+
+    <hr /> <!-- ----------------------------------------------- -->
+
+    <script src="Players_and_scores4.js"></script>
+</body>
+</html>
