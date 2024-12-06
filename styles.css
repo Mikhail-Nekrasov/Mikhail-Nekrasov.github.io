@@ -1,0 +1,262 @@
+/* Style for all elements on the pages */
+body {
+  color: black;
+  background-color:azure;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: relative;
+  height: 90%;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h1 {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: darkslategray;
+  text-align:  center;
+}
+
+h2 {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: darkslategray;
+  text-align:  center;
+}
+
+h3 {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: darkslategray;
+  text-align:  center;
+}
+
+
+/* Style for the footer on all pages */
+footer {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: small;
+  color: darkslategray;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(135, 209, 251); 
+  position: fixed;
+  left: 18px;
+  right: 18px;
+  bottom: 10px;
+  border-radius: 4px;
+}
+
+
+/* Styles for the pictures */
+.my_photo {
+  max-width: 100px;
+  float:right;
+  margin: 10px 20px;
+}
+
+.desktop_picture {
+  position:relative;
+  margin-left: 5px;
+  margin-bottom: -76px;
+  z-index: -1;
+}
+
+.icon_phone{
+  float:left;
+  margin: -2px 9px;
+}
+
+.icon_mail{
+  float:left;
+  margin: 3px 9px;
+}
+
+
+/* Style for tables on the Experience page */
+.table-class th {
+  color:#000000;
+  text-align:center;
+  padding: 8px;
+  border: 1px solid rgb(1, 118, 157);
+} 
+
+.table-class td{
+  color:#000000;
+  text-align:left;
+  padding: 8px;
+  border: 1px solid rgb(1, 118, 157);
+} 
+
+
+/* Styles for the Contact page elements */
+.contacts {
+  text-align: left;
+  padding: 3px 9px;
+  border-radius: 3px;
+  border: none;
+  text-decoration: none;
+  background-color:rgb(245, 255, 255);
+  box-shadow: 0px 0.5px 1.5px rgba(0, 0, 0, 0.25), inset 0px 0.8px 0px -0.25px hsla(0, 0%, 0%, 0.2);
+}
+
+.map {
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 3px 20px;
+  border-radius: 3px;
+  background-color:rgb(245, 255, 255);
+  box-shadow: 0px 0.5px 1.5px rgba(0, 0, 0, 0.25), inset 0px 0.8px 0px -0.25px hsla(0, 0%, 0%, 0.2);
+}
+
+
+/* Style for map buttons */
+.geo_buttons {
+  text-align: center;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(180deg, #0652c3 0%, #367AF6 100%);
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.geo_buttons:active{
+  background: lightcoral;
+}
+
+
+/* Style for navigation elements */
+.button-10 {
+  text-align: center;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+   background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.button-10:active{
+  background: rgb(114, 95, 209);
+}
+
+.button-10:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
+.selected {
+  text-align: center;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(180deg, #0147b1 0%, #367AF6 100%);
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+/* Styles for changing navigation elements and a desctop picture depending on the window's size */
+@media only screen and (max-width: 421px){ 
+
+  .nav-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content:center;
+    background-color: rgb(251, 251, 251);
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    row-gap: 2px;
+    box-shadow: 0px 0.5px 1.5px rgba(0, 0, 0, 0.25), inset 0px 0.8px 0px -0.25px hsla(0, 0%, 0%, 0.2);
+    margin: auto;
+    width: 120px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+    
+  .desktop_picture {
+    position: fixed;
+    top: 123px;
+    z-index: -1;
+  }
+}
+  
+  
+@media only screen and (min-width:422px) and (max-width:1079px){
+  
+    .nav-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content:space-around ;
+    background-color: rgb(251, 251, 251);
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    column-gap: 10px;
+    box-shadow: 0px 0.5px 1.5px rgba(0, 0, 0, 0.25), inset 0px 0.8px 0px -0.25px hsla(0, 0%, 0%, 0.2);
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    }
+  }
+  
+@media only screen and (min-width:1080px){
+
+  .nav-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content:space-around ;
+  background-color: rgb(251, 251, 251);
+  border-radius: 4px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  column-gap: 10px;
+  box-shadow: 0px 0.5px 1.5px rgba(0, 0, 0, 0.25), inset 0px 0.8px 0px -0.25px hsla(0, 0%, 0%, 0.2);
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  }
+
+  .button-10 {
+  text-align: center;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+  background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  max-width: 300px;
+  } 
+
+  .selected {
+  text-align: center;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(180deg, #0147b1 0%, #367AF6 100%);
+  background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  max-width: 300px;
+  }
+
+}

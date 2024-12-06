@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://www.webglearth.com/v2/api.js"></script>
+    <script src="WebGLEarthAPI.js"></script>
+    <title>Contacts</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body onload="initialize()">
+    <nav class="nav-container">
+        <a href="Index.html"class="button-10">Homepage</a>
+        <a href="Experience.html"class="button-10">Experience</a>
+        <a href="Contacts.html"class="selected">Contacts</a>
+    </nav>
+
+
+    <h1>Contacts</h1>
+
+    <div class="contacts">
+      <p><img src="phone.png" class="icon_phone" alt="phone_picture" width=18px>Mobile phone: +358 055-55-55</p>
+      <p><img src="mail.png" class="icon_mail" alt="envelope_picture" width=18px>E-mail: <a href="mailto:mikhail.nekrasov@myy.haaga-helia.fi">mikhail.nekrasov@myy.haaga-helia.fi</a></p>
+      
+    </div>  
+
+    <div class="map">
+        <div>
+            <p>It is possible to book a room for a meeting in Haaga-Helia University, or in Helsinki Central Library Oodi.</p>
+        </div>  
+        <div id="result"></div>
+        <div class="earth_map" id="earth_div"></div>
+  
+        <div id="buttons">
+            <button class="geo_buttons" onclick="goHaaga()">Show Haaga-Helia</button>
+            <button class="geo_buttons" onclick="goOodi()">Show Oodi</button>
+        </div>
+    </div>
+
+    
+
+    <footer>2024</footer>
+</body>
+</html>
