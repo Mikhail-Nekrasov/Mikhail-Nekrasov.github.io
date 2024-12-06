@@ -9,7 +9,7 @@ function initialize() {
     };
     earth = new WE.map('earth_div', options);
   
-    WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    WE.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: 'Â© OpenStreetMap contributors'
     }).addTo(earth);
 
