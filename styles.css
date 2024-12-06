@@ -20,6 +20,7 @@ h2 {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: darkslategray;
   text-align:  center;
+  font-size: 20px;
 }
 
 h3 {
@@ -47,6 +48,7 @@ footer {
 
 /* Styles for the pictures */
 .my_photo {
+  width: 20%;
   max-width: 100px;
   float:right;
   margin: 10px 20px;
@@ -189,8 +191,7 @@ footer {
   }
     
   .desktop_picture {
-    position: fixed;
-    top: 123px;
+    position: relative;
     z-index: -1;
   }
 }
